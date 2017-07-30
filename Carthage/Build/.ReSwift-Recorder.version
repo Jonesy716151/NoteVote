@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "d55accc3b2d867cae59cf64ef85507ae8d18924799c3e97fdf20bd4f3b05877c",
+      "name" : "ReSwiftRecorder"
+    }
+  ],
+  "commitish" : "0.4.0",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

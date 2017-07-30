@@ -1,0 +1,10 @@
+framework module ReSwiftRecorder {
+  umbrella header "ReSwiftRecorder.h"
+
+  export *
+  module * { export * }
+}
+
+module ReSwiftRecorder.Swift {
+    header "ReSwiftRecorder-Swift.h"
+}

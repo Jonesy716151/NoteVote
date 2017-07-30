@@ -1,0 +1,27 @@
+{
+  "iOS" : [
+    {
+      "hash" : "02091dd1215187a02bb29f0e2f494b9b00f402f26006605470aa6c5b3734b923",
+      "name" : "ReSwiftRouter"
+    }
+  ],
+  "commitish" : "0.5.1",
+  "watchOS" : [
+    {
+      "hash" : "6372c51244f062dc77e182d3111decdca69528f1eb20506a9291d0b67255015e",
+      "name" : "ReSwiftRouter"
+    }
+  ],
+  "tvOS" : [
+    {
+      "hash" : "9906f2936b5ed34c58e12a7fe0abb155c4ade6585c85a70f125517e5944485e4",
+      "name" : "ReSwiftRouter"
+    }
+  ],
+  "Mac" : [
+    {
+      "hash" : "dbc6f919b62705ae878d61bd269e7741ee5bcf65c84209349daec4c53077478e",
+      "name" : "ReSwiftRouter"
+    }
+  ]
+}
