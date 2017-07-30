@@ -14,6 +14,8 @@
 		ADA218871F2DACF3008AFA0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA218851F2DACF3008AFA0E /* LaunchScreen.storyboard */; };
 		ADA218921F2DACF3008AFA0E /* NoteVoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA218911F2DACF3008AFA0E /* NoteVoteTests.swift */; };
 		ADA2189D1F2DACF3008AFA0E /* NoteVoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA2189C1F2DACF3008AFA0E /* NoteVoteUITests.swift */; };
+		ADA218AB1F2DAF3C008AFA0E /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA218AA1F2DAF3C008AFA0E /* ReSwift.framework */; };
+		ADA218AC1F2DAF3C008AFA0E /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADA218AA1F2DAF3C008AFA0E /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		ADA218AD1F2DAF3C008AFA0E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ADA218AC1F2DAF3C008AFA0E /* ReSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		ADA218791F2DACF3008AFA0E /* NoteVote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteVote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA2187C1F2DACF3008AFA0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +63,7 @@
 		ADA218981F2DACF3008AFA0E /* NoteVoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteVoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA2189C1F2DACF3008AFA0E /* NoteVoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteVoteUITests.swift; sourceTree = "<group>"; };
 		ADA2189E1F2DACF3008AFA0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA218AA1F2DAF3C008AFA0E /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA218AB1F2DAF3C008AFA0E /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +95,7 @@
 		ADA218701F2DACF3008AFA0E = {
 			isa = PBXGroup;
 			children = (
+				ADA218AA1F2DAF3C008AFA0E /* ReSwift.framework */,
 				ADA2187B1F2DACF3008AFA0E /* NoteVote */,
 				ADA218901F2DACF3008AFA0E /* NoteVoteTests */,
 				ADA2189B1F2DACF3008AFA0E /* NoteVoteUITests */,
@@ -135,6 +154,7 @@
 				ADA218751F2DACF3008AFA0E /* Sources */,
 				ADA218761F2DACF3008AFA0E /* Frameworks */,
 				ADA218771F2DACF3008AFA0E /* Resources */,
+				ADA218AD1F2DAF3C008AFA0E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -418,6 +438,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C39ZBZ8S99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NoteVote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jonesy716151.NoteVote;
@@ -431,6 +455,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C39ZBZ8S99;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NoteVote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jonesy716151.NoteVote;
